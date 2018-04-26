@@ -16,3 +16,8 @@ function hide_numbers(s){
 console.log("결과 : " + hide_numbers('01033334444'));
 
 // slice 0,lastIdx 두번째 param은 포함하지 않음 !!!
+
+// 여긴 역시 정규표현식 답이 많다.
+
+//   return s.replace(/\d(?=\d{4})/g, "*");
+
