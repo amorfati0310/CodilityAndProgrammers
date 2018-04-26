@@ -30,7 +30,7 @@ const collatz = (num) => {
 //   return num == 1 ? (count >= 500 ? -1 : count) : collatz(num % 2 == 0 ? num / 2 : num * 3 + 1,++count);
 // }
 
-// return num == 1 ? answer : -1;
+// return num == 1 ? answer : -1; 마지막에 분기문으로 처리하는 것이 더 좋았을 듯 하다 :D  num===1이면 바로
 
 
 // 아래는 테스트로 출력해 보기 위한 코드입니다.
