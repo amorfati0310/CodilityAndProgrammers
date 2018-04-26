@@ -1,6 +1,8 @@
 function average(array){
   //함수를 완성하세요
-  const sum = array.reduce((ac,c)=>ac+c)
+  const sum = array.reduce((ac,c)=>
+  {return ac+c}
+)
   
   return sum/array.length;
 }
