@@ -4,7 +4,10 @@ function solution(H) {
   // write your code in JavaScript (Node.js 8.9.4)
 
   // stack 
+
+  // 안되는 이유 기준값이 한 번 높은 값 나왔다가 중간값이 나온 후에 다시 올라갈 떄 중간값 이후 값들을 체크 못 해준다 !!!
   if(H.length<2) return H.length;
+  debugger;
   let heightStack = [];
   let compareValue = H[0];
   heightStack.push(compareValue);
@@ -21,8 +24,9 @@ function solution(H) {
       }
   }
   count+=new Set(heightStack).size
+  console.log(count);
   return count;
 }
 
 solution([8,8,5,7,9,8,7,4,8])
-solution([1,0,2,1,2,3,0,1,2,3,2])
+solution([1,2,3,4,5,4,3,4,5,4,5,4])
