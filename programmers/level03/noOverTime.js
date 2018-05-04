@@ -15,8 +15,6 @@ const getSumPow = (list)=> list.reduce((ac,c)=>{
 },0)		
 
 function noOvertime(overWork, works) {
-	if(works.length===0) return 0;
-	if(overWork===0) return getSumPow(works)
 	works.sort((a,b)=>b-a);
 	const gap = works[0]-works[1]
 	if(overWork<=gap){
