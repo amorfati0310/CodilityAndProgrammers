@@ -45,3 +45,7 @@ function threeNum(array){
 console.log(threeNum([-3,1,2,4,-2,-2,0]))
 
 // https://www.youtube.com/watch?v=Zdf_AuEAWpY
+
+
+// 1,2 2,1 이렇게만 생각했는데 0,0,0은 제외했네 
+//
