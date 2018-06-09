@@ -27,5 +27,5 @@ function getEvenOver(str){
 }
 
 
-var str ="3\n 1 3\n 2 4\n 5 6\n"
+var str ="3\n 1 2\n 1 4\n 2 4\n"
 console.log(getEvenOver(str)); 
