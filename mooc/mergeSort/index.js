@@ -1,6 +1,5 @@
 function mergeSort(arr){
   // arr 반으로 나누고 나누고 
-  debugger
   if(arr.length<2) return arr
   const mid = Math.floor(arr.length/2)
   const first = arr.slice(0, mid)
