@@ -17,6 +17,8 @@
 //     (3, 2, 2, 3, 2)
 //     (3, 2, 2, 4, 2)
 
+//https://app.codility.com/demo/results/training2DRKXG-PGG/
+
 function solution(N, A) {
   // make Counter 
   const counter = new Array(N).fill(0)
