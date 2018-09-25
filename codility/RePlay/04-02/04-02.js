@@ -28,6 +28,10 @@ function solution(X, A) {
 function solution(X, A) {
   // write your code in JavaScript (Node.js 8.9.4)    
   const marks = new Set();
+  // 1. 값이 x보다 작으면 추가 
+  // 2. size가 X랑 같아지면 return A.splice(1)
+  // 배열이랑 A.splice(1) && i -> number(i)가 결과 값으로 나온다.
+  // A.splice(1)-> 원 본 배열을 i 0만 남겨서 바로 return 시킬 수 있다. 
   return A.reduce((idx,v,i)=>{
      v <= X && marks.add(v);
      return marks.size === X ? A.splice(1) && i : idx;
